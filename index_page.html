@@ -1,4 +1,9 @@
-<iframe id="redirectURL" style="border:0; position: absolute; top:0;left:0; height: 1000px; width: 100%"></iframe>
+<iframe id="redirectURL" onload="myFunction()" style="border:0; position: absolute; top:0;left:0; height: 1000px; width: 100%"></iframe>
 <script>
 	document.getElementById('redirectURL').src = 'https://localhost:3000'		
+	function myFunction() {
+		var src = document.getElementById('redirectURL').src;
+		alert(document.getElementById('redirectURL').src)
+	}
+
 </script>
